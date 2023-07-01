@@ -1,0 +1,150 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #161717;
+  color: #fff; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 48px 20px 0;
+}
+
+header .dribbble-logo {
+  width: 90px;
+  height: auto;
+  fill: currentColor;
+}
+
+header .logo {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: inherit;
+}
+
+main {
+  padding: 0 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 416px;
+  margin: auto;
+}
+
+.container h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.auth-buttons {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.auth-buttons button {
+  display: flex;
+  place-items: center;
+}
+
+.auth-buttons .google-button {
+  width: 250px;
+  min-width: 250px;
+  padding: 3px;
+  margin-right: 10px;
+  background: #1a73e8;
+  border: none;
+  border-radius: 7px;
+  color: inherit;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.google-button .google-icon {
+  margin-right: 24px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #fff;
+}
+
+.auth-buttons .twitter-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.16);
+  color: #1d9bf0;
+}
+
+.twitter-button .twitter-icon svg{
+  width: 13px;
+  height: 13px;
+  display: flex;
+  place-content: center;
+  fill: currentColor;
+}
+
+.divider {
+  margin-bottom: 10px;
+  border: none;
+  border-top: 2px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
+  overflow: visible;
+}
+
+.divider::after {
+  content: "Or";
+  padding: 0 16px;
+  position: relative;
+  top: -9px;
+  color: rgba(255, 255, 255, 0.7);
+  background: #161717;
+}
+
+.form-field-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.form-group {
+  padding: 12px 0;
+}
+
+label {
+  display: block;
+  margin: 15px 0 8px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px 16px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+input[type="text"]:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+}
