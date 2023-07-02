@@ -221,3 +221,14 @@ input.button {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
 }
+
+@media screen and (min-width: 400px) {
+  fieldset.fields {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .field {
+    width: 48%;
+  }
+}
